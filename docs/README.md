@@ -52,3 +52,12 @@ curl http://localhost:8000/verify/<sha256hash>
 ### 7. ENS Landing
 - Portal resolves at https://trustcat.eth.link (Cloudflare ENS gateway)
 - trustcat.eth controls contract + wallet identity (Metamask / WalletConnect)
+
+---
+
+## 🚧 Next Steps Checklist
+- Run `./bootstrap.sh` (already included) to scaffold the repo on fresh machines.
+- Replace sample assets in `assets/` with real TrustCat logos (dark, light, favicon).
+- Deploy `TrustCatHash.sol` and `TrustCatPayments.sol` via Hardhat/Foundry to your target network.
+- Configure frontend WalletConnect to resolve `trustcat.eth` ENS and use deployed contract addresses.
+- Host frontend (GitHub Pages, Vercel, etc.) and map via `portal.trustcat.eth` ENS (Cloudflare gateway).
